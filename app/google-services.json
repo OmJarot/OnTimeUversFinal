@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "59253409167",
+    "firebase_url": "https://ontimeuvers-2c469-default-rtdb.firebaseio.com",
+    "project_id": "ontimeuvers-2c469",
+    "storage_bucket": "ontimeuvers-2c469.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:59253409167:android:66b78037fe8d4d8cebf7fa",
+        "android_client_info": {
+          "package_name": "com.example.ontimeuvers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "59253409167-8mnca5miv39r2dcjgu23gfikqjkrghqs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ontimeuvers",
+            "certificate_hash": "a8b80db1a3d342e7f536990093973ebf4c66f7e5"
+          }
+        },
+        {
+          "client_id": "59253409167-km6lb3icrqudp6lvm2h0phjjjo7gjb53.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJtgSWYU4sGq5mOCKv8WtfFs9p87TG_M4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "59253409167-km6lb3icrqudp6lvm2h0phjjjo7gjb53.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

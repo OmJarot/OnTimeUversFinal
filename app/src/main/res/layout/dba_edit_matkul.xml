@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/formMatkulAccount"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:background="@drawable/form2"
+        android:visibility="gone">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Matkul"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/closeMatkulImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:maxWidth="20dp"
+            android:maxHeight="20dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/close"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whites"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableLayout
+                android:id="@+id/tableUserMatkulLayouts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:stretchColumns="2"
+                android:textAlignment="center"
+                app:layout_constraintTop_toTopOf="@+id/guideline9">
+
+                <TableRow android:layout_marginBottom="3dp">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:fontFamily="@font/creatoregular"
+                        android:text="Nama"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="10dp"
+
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/nameMatkulTextView"
+                        android:fontFamily="@font/creatoregular"
+                        android:text="@string/loading"
+                        android:textSize="16sp" />
+
+                </TableRow>
+
+                <TableRow android:layout_marginBottom="3dp">
+
+                    <TextView
+                        android:fontFamily="@font/creatoregular"
+                        android:text="NIM"
+                        android:textSize="16sp" />
+
+                    <TextView android:text=":" />
+
+                    <TextView
+                        android:id="@+id/nimMatkulTextView"
+                        android:fontFamily="@font/creatoregular"
+                        android:text="@string/loading"
+                        android:textSize="16sp" />
+
+                </TableRow>
+
+                <TableRow android:layout_marginBottom="3dp">
+
+                    <TextView
+                        android:fontFamily="@font/creatoregular"
+                        android:text="Jurusan"
+                        android:textSize="16sp" />
+
+                    <TextView android:text=":" />
+
+                    <TextView
+                        android:id="@+id/jurusanMatkulTextView"
+                        android:fontFamily="@font/creatoregular"
+                        android:text="@string/loading"
+                        android:textSize="16sp" />
+
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/userDetailTableLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:textAlignment="center"
+            app:layout_constraintTop_toTopOf="@+id/guideline9">
+
+            <TableRow android:background="#DDDDDD">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:padding="8dp"
+                    android:text="Hari"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:padding="8dp"
+                    android:text="Sesi 1"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:padding="8dp"
+                    android:text="Sesi 2"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp">
+
+            <ScrollView
+                android:id="@+id/myScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxHeight="200dp"
+                android:scrollbars="none"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" >
+
+                <TableLayout
+                    android:id="@+id/detailMatkulTableLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="*"
+                    android:textAlignment="center"
+                    app:layout_constraintTop_toTopOf="@+id/guideline9">
+
+                </TableLayout>
+            </ScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/matkulButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:text="Edit"/>
+
+    </LinearLayout>
+</merge>
